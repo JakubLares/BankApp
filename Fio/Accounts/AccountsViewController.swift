@@ -12,7 +12,7 @@ class AccountsViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
 
-    var viewModel = AccountsViewModel()
+    private var viewModel = AccountsViewModel()
 
     private var cancellables = Set<AnyCancellable>()
 
@@ -28,6 +28,14 @@ class AccountsViewController: UIViewController {
     private func setupUI() {
         title = LocalizableStrings.accounts
         navigationController?.navigationBar.prefersLargeTitles = true
+
+        let paymentButton = UIBarButtonItem(image: Images.newPayment, style: .done, target: self, action: #selector((paymentButton)))
+        navigationItem.rightBarButtonItem = paymentButton
+    }
+
+    @objc private func paymentButton() {
+        guard let newPaymentViewController = StoryboardScene.paymentForm else { return }
+        navigationController?.pushViewController(newPaymentViewController, animated: true)
     }
 
     private func setupTableView() {

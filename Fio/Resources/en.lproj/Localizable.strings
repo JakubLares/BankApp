@@ -7,3 +7,10 @@
 */
 
 "Accounts" = "Accounts";
+"NewPayment" = "New Payment";
+"ToAccount" = "To account";
+"BankCode" = "Bank code";
+"Amount" = "Amount";
+"CzechCrown" = "Kč";
+"Pay" = "PAY";
+

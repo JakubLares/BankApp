@@ -7,15 +7,9 @@
 
 import UIKit
 
-enum Images {
+class Images {
 
-    case accounts
-
-    func image() -> UIImage? {
-        switch self {
-        case .accounts:
-            return UIImage(systemName: "list.bullet")
-        }
-    }
+    static let newPayment = UIImage(systemName: "arrowshape.turn.up.forward")
 
 }
+

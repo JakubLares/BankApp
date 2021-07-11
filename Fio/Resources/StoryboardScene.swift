@@ -9,6 +9,11 @@ import UIKit
 
 class StoryboardScene {
 
-    static let accounts = UIStoryboard(name: "AccountsViewController",bundle: nil).instantiateInitialViewController()
+    static var accounts: UIViewController? { StoryboardScene.initializeViewControler(name: "AccountsViewController") }
+    static var paymentForm: UIViewController? { StoryboardScene.initializeViewControler(name: "NewPaymentViewController") }
+
+    private static func initializeViewControler(name: String) -> UIViewController? {
+        return UIStoryboard(name: name, bundle: nil).instantiateInitialViewController()
+    }
     
 }

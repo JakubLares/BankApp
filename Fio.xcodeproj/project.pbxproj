@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		6C03B8F0269B1A3F00BB3C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B8EF269B1A3F00BB3C15 /* AppDelegate.swift */; };
 		6C03B8F2269B1A3F00BB3C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B8F1269B1A3F00BB3C15 /* SceneDelegate.swift */; };
-		6C03B8F7269B1A3F00BB3C15 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C03B8F5269B1A3F00BB3C15 /* MainTabBarController.storyboard */; };
 		6C03B8F9269B1A4000BB3C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C03B8F8269B1A4000BB3C15 /* Assets.xcassets */; };
 		6C03B8FC269B1A4000BB3C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C03B8FA269B1A4000BB3C15 /* LaunchScreen.storyboard */; };
-		6C03B905269B1B4D00BB3C15 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B904269B1B4D00BB3C15 /* MainTabBarController.swift */; };
 		6C03B90A269B1BE600BB3C15 /* AccountsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C03B909269B1BE600BB3C15 /* AccountsViewController.storyboard */; };
 		6C03B90C269B1C4E00BB3C15 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B90B269B1C4E00BB3C15 /* AccountsViewController.swift */; };
 		6C03B90E269B1CAC00BB3C15 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B90D269B1CAC00BB3C15 /* AccountsViewModel.swift */; };
@@ -25,17 +23,22 @@
 		6C03B922269B3DDF00BB3C15 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B921269B3DDF00BB3C15 /* TableViewCells.swift */; };
 		6C03B924269B4AB000BB3C15 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B923269B4AB000BB3C15 /* APIClient.swift */; };
 		6C03B928269B4BD200BB3C15 /* AccountsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B927269B4BD200BB3C15 /* AccountsResponse.swift */; };
+		6C03B92C269B53FE00BB3C15 /* NewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B92B269B53FE00BB3C15 /* NewPaymentViewController.swift */; };
+		6C03B92E269B541F00BB3C15 /* NewPaymentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C03B92D269B541F00BB3C15 /* NewPaymentViewController.storyboard */; };
+		6C03B930269B5F0200BB3C15 /* NewPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B92F269B5F0200BB3C15 /* NewPaymentViewModel.swift */; };
+		6C03B933269B625200BB3C15 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B932269B625200BB3C15 /* UITextField.swift */; };
+		6C03B935269B9D3900BB3C15 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B934269B9D3900BB3C15 /* String.swift */; };
+		6C03B939269BAA7600BB3C15 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B938269BAA7600BB3C15 /* Payment.swift */; };
+		6C03B93B269BAA9C00BB3C15 /* FileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B93A269BAA9C00BB3C15 /* FileClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C03B8EC269B1A3F00BB3C15 /* Fio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C03B8EF269B1A3F00BB3C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C03B8F1269B1A3F00BB3C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C03B8F6269B1A3F00BB3C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabBarController.storyboard; sourceTree = "<group>"; };
 		6C03B8F8269B1A4000BB3C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C03B8FB269B1A4000BB3C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C03B8FD269B1A4000BB3C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C03B904269B1B4D00BB3C15 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6C03B909269B1BE600BB3C15 /* AccountsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountsViewController.storyboard; sourceTree = "<group>"; };
 		6C03B90B269B1C4E00BB3C15 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		6C03B90D269B1CAC00BB3C15 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
@@ -48,6 +51,13 @@
 		6C03B921269B3DDF00BB3C15 /* TableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCells.swift; sourceTree = "<group>"; };
 		6C03B923269B4AB000BB3C15 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		6C03B927269B4BD200BB3C15 /* AccountsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsResponse.swift; sourceTree = "<group>"; };
+		6C03B92B269B53FE00BB3C15 /* NewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPaymentViewController.swift; sourceTree = "<group>"; };
+		6C03B92D269B541F00BB3C15 /* NewPaymentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPaymentViewController.storyboard; sourceTree = "<group>"; };
+		6C03B92F269B5F0200BB3C15 /* NewPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPaymentViewModel.swift; sourceTree = "<group>"; };
+		6C03B932269B625200BB3C15 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		6C03B934269B9D3900BB3C15 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6C03B938269BAA7600BB3C15 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		6C03B93A269BAA9C00BB3C15 /* FileClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,25 +90,18 @@
 		6C03B8EE269B1A3F00BB3C15 /* Fio */ = {
 			isa = PBXGroup;
 			children = (
-				6C03B925269B4B9D00BB3C15 /* API */,
+				6C03B931269B624700BB3C15 /* Extensions */,
+				6C03B925269B4B9D00BB3C15 /* APIClient */,
+				6C03B936269BAA4400BB3C15 /* FileClient */,
 				6C03B910269B28AE00BB3C15 /* Resources */,
 				6C03B906269B1B8400BB3C15 /* Accounts */,
-				6C03B903269B1B3800BB3C15 /* Main */,
+				6C03B92A269B53D900BB3C15 /* NewPayment */,
 				6C03B8EF269B1A3F00BB3C15 /* AppDelegate.swift */,
 				6C03B8F1269B1A3F00BB3C15 /* SceneDelegate.swift */,
 				6C03B8FA269B1A4000BB3C15 /* LaunchScreen.storyboard */,
 				6C03B8FD269B1A4000BB3C15 /* Info.plist */,
 			);
 			path = Fio;
-			sourceTree = "<group>";
-		};
-		6C03B903269B1B3800BB3C15 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				6C03B904269B1B4D00BB3C15 /* MainTabBarController.swift */,
-				6C03B8F5269B1A3F00BB3C15 /* MainTabBarController.storyboard */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		6C03B906269B1B8400BB3C15 /* Accounts */ = {
@@ -134,19 +137,55 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		6C03B925269B4B9D00BB3C15 /* API */ = {
+		6C03B925269B4B9D00BB3C15 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
 				6C03B923269B4AB000BB3C15 /* APIClient.swift */,
 				6C03B926269B4BA900BB3C15 /* Models */,
 			);
-			path = API;
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 		6C03B926269B4BA900BB3C15 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				6C03B927269B4BD200BB3C15 /* AccountsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C03B92A269B53D900BB3C15 /* NewPayment */ = {
+			isa = PBXGroup;
+			children = (
+				6C03B92B269B53FE00BB3C15 /* NewPaymentViewController.swift */,
+				6C03B92D269B541F00BB3C15 /* NewPaymentViewController.storyboard */,
+				6C03B92F269B5F0200BB3C15 /* NewPaymentViewModel.swift */,
+			);
+			path = NewPayment;
+			sourceTree = "<group>";
+		};
+		6C03B931269B624700BB3C15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C03B932269B625200BB3C15 /* UITextField.swift */,
+				6C03B934269B9D3900BB3C15 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C03B936269BAA4400BB3C15 /* FileClient */ = {
+			isa = PBXGroup;
+			children = (
+				6C03B93A269BAA9C00BB3C15 /* FileClient.swift */,
+				6C03B937269BAA5F00BB3C15 /* Models */,
+			);
+			path = FileClient;
+			sourceTree = "<group>";
+		};
+		6C03B937269BAA5F00BB3C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C03B938269BAA7600BB3C15 /* Payment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,12 +247,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C03B92E269B541F00BB3C15 /* NewPaymentViewController.storyboard in Resources */,
 				6C03B915269B357D00BB3C15 /* Localizable.strings in Resources */,
 				6C03B91F269B3B4800BB3C15 /* AccountsTableViewCell.xib in Resources */,
 				6C03B90A269B1BE600BB3C15 /* AccountsViewController.storyboard in Resources */,
 				6C03B8FC269B1A4000BB3C15 /* LaunchScreen.storyboard in Resources */,
 				6C03B8F9269B1A4000BB3C15 /* Assets.xcassets in Resources */,
-				6C03B8F7269B1A3F00BB3C15 /* MainTabBarController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,15 +263,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C03B93B269BAA9C00BB3C15 /* FileClient.swift in Sources */,
 				6C03B928269B4BD200BB3C15 /* AccountsResponse.swift in Sources */,
 				6C03B922269B3DDF00BB3C15 /* TableViewCells.swift in Sources */,
+				6C03B930269B5F0200BB3C15 /* NewPaymentViewModel.swift in Sources */,
 				6C03B912269B28E100BB3C15 /* Images.swift in Sources */,
 				6C03B8F0269B1A3F00BB3C15 /* AppDelegate.swift in Sources */,
+				6C03B935269B9D3900BB3C15 /* String.swift in Sources */,
+				6C03B939269BAA7600BB3C15 /* Payment.swift in Sources */,
 				6C03B90C269B1C4E00BB3C15 /* AccountsViewController.swift in Sources */,
-				6C03B905269B1B4D00BB3C15 /* MainTabBarController.swift in Sources */,
+				6C03B92C269B53FE00BB3C15 /* NewPaymentViewController.swift in Sources */,
 				6C03B924269B4AB000BB3C15 /* APIClient.swift in Sources */,
 				6C03B90E269B1CAC00BB3C15 /* AccountsViewModel.swift in Sources */,
 				6C03B91B269B369200BB3C15 /* StoryboardScene.swift in Sources */,
+				6C03B933269B625200BB3C15 /* UITextField.swift in Sources */,
 				6C03B8F2269B1A3F00BB3C15 /* SceneDelegate.swift in Sources */,
 				6C03B919269B35AA00BB3C15 /* LocalizableStrings.swift in Sources */,
 				6C03B91E269B3B4800BB3C15 /* AccountsTableViewCell.swift in Sources */,
@@ -242,14 +286,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C03B8F5269B1A3F00BB3C15 /* MainTabBarController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C03B8F6269B1A3F00BB3C15 /* Base */,
-			);
-			name = MainTabBarController.storyboard;
-			sourceTree = "<group>";
-		};
 		6C03B8FA269B1A4000BB3C15 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

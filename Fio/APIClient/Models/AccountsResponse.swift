@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct AccountsResponse: Codable {
+struct AccountsResponse: Decodable {
 
-    struct Account: Codable {
+    struct Account: Decodable {
         let name: String
         let number: Int
         let currency: String
