@@ -10,6 +10,7 @@ import UIKit
 class TableViewCells {
 
     static let accounts = "AccountsTableViewCell"
+    static let transactionHistory = "TransactionHistoryTableViewCell"
 
 }
 

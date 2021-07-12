@@ -30,6 +30,11 @@
 		6C03B935269B9D3900BB3C15 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B934269B9D3900BB3C15 /* String.swift */; };
 		6C03B939269BAA7600BB3C15 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B938269BAA7600BB3C15 /* Payment.swift */; };
 		6C03B93B269BAA9C00BB3C15 /* FileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B93A269BAA9C00BB3C15 /* FileClient.swift */; };
+		6C03B93E269BB38A00BB3C15 /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B93D269BB38A00BB3C15 /* TransactionHistoryViewController.swift */; };
+		6C03B940269BB3BB00BB3C15 /* TransactionHistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C03B93F269BB3BB00BB3C15 /* TransactionHistoryViewController.storyboard */; };
+		6C03B942269BB3C800BB3C15 /* TransactionHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B941269BB3C800BB3C15 /* TransactionHistoryViewModel.swift */; };
+		6C03B945269BB75900BB3C15 /* TransactionHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03B944269BB75900BB3C15 /* TransactionHistoryTableViewCell.swift */; };
+		6C03B947269BB76D00BB3C15 /* TransactionHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C03B946269BB76D00BB3C15 /* TransactionHistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,11 @@
 		6C03B934269B9D3900BB3C15 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		6C03B938269BAA7600BB3C15 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		6C03B93A269BAA9C00BB3C15 /* FileClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClient.swift; sourceTree = "<group>"; };
+		6C03B93D269BB38A00BB3C15 /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewController.swift; sourceTree = "<group>"; };
+		6C03B93F269BB3BB00BB3C15 /* TransactionHistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionHistoryViewController.storyboard; sourceTree = "<group>"; };
+		6C03B941269BB3C800BB3C15 /* TransactionHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewModel.swift; sourceTree = "<group>"; };
+		6C03B944269BB75900BB3C15 /* TransactionHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		6C03B946269BB76D00BB3C15 /* TransactionHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionHistoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,7 @@
 				6C03B910269B28AE00BB3C15 /* Resources */,
 				6C03B906269B1B8400BB3C15 /* Accounts */,
 				6C03B92A269B53D900BB3C15 /* NewPayment */,
+				6C03B93C269BB36F00BB3C15 /* TransactionHistory */,
 				6C03B8EF269B1A3F00BB3C15 /* AppDelegate.swift */,
 				6C03B8F1269B1A3F00BB3C15 /* SceneDelegate.swift */,
 				6C03B8FA269B1A4000BB3C15 /* LaunchScreen.storyboard */,
@@ -190,6 +201,26 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		6C03B93C269BB36F00BB3C15 /* TransactionHistory */ = {
+			isa = PBXGroup;
+			children = (
+				6C03B93D269BB38A00BB3C15 /* TransactionHistoryViewController.swift */,
+				6C03B93F269BB3BB00BB3C15 /* TransactionHistoryViewController.storyboard */,
+				6C03B941269BB3C800BB3C15 /* TransactionHistoryViewModel.swift */,
+				6C03B943269BB72A00BB3C15 /* Cells */,
+			);
+			path = TransactionHistory;
+			sourceTree = "<group>";
+		};
+		6C03B943269BB72A00BB3C15 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6C03B944269BB75900BB3C15 /* TransactionHistoryTableViewCell.swift */,
+				6C03B946269BB76D00BB3C15 /* TransactionHistoryTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +284,8 @@
 				6C03B90A269B1BE600BB3C15 /* AccountsViewController.storyboard in Resources */,
 				6C03B8FC269B1A4000BB3C15 /* LaunchScreen.storyboard in Resources */,
 				6C03B8F9269B1A4000BB3C15 /* Assets.xcassets in Resources */,
+				6C03B940269BB3BB00BB3C15 /* TransactionHistoryViewController.storyboard in Resources */,
+				6C03B947269BB76D00BB3C15 /* TransactionHistoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +299,12 @@
 				6C03B93B269BAA9C00BB3C15 /* FileClient.swift in Sources */,
 				6C03B928269B4BD200BB3C15 /* AccountsResponse.swift in Sources */,
 				6C03B922269B3DDF00BB3C15 /* TableViewCells.swift in Sources */,
+				6C03B945269BB75900BB3C15 /* TransactionHistoryTableViewCell.swift in Sources */,
 				6C03B930269B5F0200BB3C15 /* NewPaymentViewModel.swift in Sources */,
 				6C03B912269B28E100BB3C15 /* Images.swift in Sources */,
 				6C03B8F0269B1A3F00BB3C15 /* AppDelegate.swift in Sources */,
 				6C03B935269B9D3900BB3C15 /* String.swift in Sources */,
+				6C03B942269BB3C800BB3C15 /* TransactionHistoryViewModel.swift in Sources */,
 				6C03B939269BAA7600BB3C15 /* Payment.swift in Sources */,
 				6C03B90C269B1C4E00BB3C15 /* AccountsViewController.swift in Sources */,
 				6C03B92C269B53FE00BB3C15 /* NewPaymentViewController.swift in Sources */,
@@ -279,6 +314,7 @@
 				6C03B933269B625200BB3C15 /* UITextField.swift in Sources */,
 				6C03B8F2269B1A3F00BB3C15 /* SceneDelegate.swift in Sources */,
 				6C03B919269B35AA00BB3C15 /* LocalizableStrings.swift in Sources */,
+				6C03B93E269BB38A00BB3C15 /* TransactionHistoryViewController.swift in Sources */,
 				6C03B91E269B3B4800BB3C15 /* AccountsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

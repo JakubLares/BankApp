@@ -16,5 +16,8 @@ struct LocalizableStrings {
     static var amount = NSLocalizedString("Amount", comment: "")
     static var czechCrown = NSLocalizedString("CzechCrown", comment: "")
     static var pay = NSLocalizedString("Pay", comment: "")
+    static var transactionHistory = NSLocalizedString("TransactionHistory", comment: "")
+    static var downloadFailed = NSLocalizedString("DownloadFailed", comment: "")
+    static var retry = NSLocalizedString("Retry", comment: "")
     
 }

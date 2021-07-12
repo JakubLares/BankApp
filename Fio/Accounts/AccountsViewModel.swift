@@ -6,24 +6,28 @@
 //
 
 import Combine
-import Foundation
+import UIKit
 
 class AccountsViewModel {
 
     @Published var acccounts = [AccountsResponse.Account]()
+    var showError = PassthroughSubject<UIAlertController, Never>()
+
     private var cancellables = Set<AnyCancellable>()
 
     func loadAccounts() {
        APIClient.shared.getAccounts()
-        .sink { completion in
+        .retry(3)
+        .receive(on: DispatchQueue.main)
+        .sink { [weak self] completion in
             switch completion {
-            case .failure(let error):
-                print(error)
+            case .failure(_):
+                self?.showDownloadError()
             case .finished:
-                print("success")
+                break
             }
-        } receiveValue: { accountsReponse in
-            self.acccounts = accountsReponse.accounts
+        } receiveValue: { [weak self] accountsReponse in
+            self?.acccounts = accountsReponse.accounts
         }
        .store(in: &cancellables)
     }
@@ -32,12 +36,20 @@ class AccountsViewModel {
         guard let cell = cell else { return }
 
         let account = acccounts[indexPath.row]
-
         cell.setupCell(name: account.name,
                        balance: "\(account.balance)",
                        currency: account.currency,
                        accountNumber: "\(account.number)/2010"
         )
+    }
+
+    private func showDownloadError() {
+        let alert = UIAlertController(title: nil, message: LocalizableStrings.downloadFailed, preferredStyle: .alert)
+        let retryAction = UIAlertAction(title: LocalizableStrings.retry, style: .default) { [weak self] _ in
+            self?.loadAccounts()
+        }
+        alert.addAction(retryAction)
+        showError.send(alert)
     }
 
 }

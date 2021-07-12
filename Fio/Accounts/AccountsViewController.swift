@@ -13,7 +13,6 @@ class AccountsViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
 
     private var viewModel = AccountsViewModel()
-
     private var cancellables = Set<AnyCancellable>()
 
     override func viewDidLoad() {
@@ -29,12 +28,19 @@ class AccountsViewController: UIViewController {
         title = LocalizableStrings.accounts
         navigationController?.navigationBar.prefersLargeTitles = true
 
-        let paymentButton = UIBarButtonItem(image: Images.newPayment, style: .done, target: self, action: #selector((paymentButton)))
+        let paymentButton = UIBarButtonItem(image: Images.newPayment, style: .done, target: self, action: #selector((paymentButtonPressed)))
         navigationItem.rightBarButtonItem = paymentButton
+        let historyButton = UIBarButtonItem(image: Images.transactionHistory, style: .done, target: self, action: #selector((transactionHistoryButtonPressed)))
+        navigationItem.leftBarButtonItem = historyButton
     }
 
-    @objc private func paymentButton() {
+    @objc private func paymentButtonPressed() {
         guard let newPaymentViewController = StoryboardScene.paymentForm else { return }
+        navigationController?.pushViewController(newPaymentViewController, animated: true)
+    }
+
+    @objc private func transactionHistoryButtonPressed() {
+        guard let newPaymentViewController = StoryboardScene.transactionHistory else { return }
         navigationController?.pushViewController(newPaymentViewController, animated: true)
     }
 
@@ -47,6 +53,13 @@ class AccountsViewController: UIViewController {
         viewModel.$acccounts
             .receive(on: DispatchQueue.main)
             .sink { _ in self.tableView.reloadData() }
+            .store(in: &cancellables)
+
+        viewModel.showError
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] alert in
+                self?.present(alert, animated: true)
+            }
             .store(in: &cancellables)
     }
 

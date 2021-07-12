@@ -13,4 +13,7 @@
 "Amount" = "Amount";
 "CzechCrown" = "Kč";
 "Pay" = "PAY";
+"TransactionHistory" = "Transaction History";
+"DownloadFailed" = "Download failed";
+"Retry" = "Retry";
 

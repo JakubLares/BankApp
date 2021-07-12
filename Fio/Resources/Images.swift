@@ -10,6 +10,7 @@ import UIKit
 class Images {
 
     static let newPayment = UIImage(systemName: "arrowshape.turn.up.forward")
+    static let transactionHistory = UIImage(systemName: "list.bullet.rectangle")
 
 }
 
