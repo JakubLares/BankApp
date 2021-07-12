@@ -6,14 +6,16 @@
   
 */
 
-"Accounts" = "Accounts";
-"NewPayment" = "New Payment";
-"ToAccount" = "To account";
-"BankCode" = "Bank code";
-"Amount" = "Amount";
-"CzechCrown" = "Kč";
-"Pay" = "PAY";
-"TransactionHistory" = "Transaction History";
-"DownloadFailed" = "Download failed";
-"Retry" = "Retry";
+"accounts.title" = "Accounts";
+"accounts.errorMessage" = "Download failed";
+"accounts.errorRetry" = "Retry";
 
+"newPayment.title" = "New Payment";
+"newPayment.toAccount" = "To account";
+"newPayment.bankCode" = "Bank code";
+"newPayment.amount" = "Amount";
+"newPayment.pay" = "PAY";
+
+"transactionHistory.title" = "Transaction History";
+
+"CzechCrown" = "Kč";

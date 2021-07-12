@@ -9,15 +9,24 @@ import Foundation
 
 struct LocalizableStrings {
 
-    static var accounts = NSLocalizedString("Accounts", comment: "")
-    static var newPayment = NSLocalizedString("NewPayment", comment: "")
-    static var toAccount = NSLocalizedString("ToAccount", comment: "")
-    static var bankCode = NSLocalizedString("BankCode", comment: "")
-    static var amount = NSLocalizedString("Amount", comment: "")
     static var czechCrown = NSLocalizedString("CzechCrown", comment: "")
-    static var pay = NSLocalizedString("Pay", comment: "")
-    static var transactionHistory = NSLocalizedString("TransactionHistory", comment: "")
-    static var downloadFailed = NSLocalizedString("DownloadFailed", comment: "")
-    static var retry = NSLocalizedString("Retry", comment: "")
+
+    struct Accounts {
+        static var title = NSLocalizedString("accounts.title", comment: "")
+        static var errorMessage = NSLocalizedString("accounts.errorMessage", comment: "")
+        static var errorRetry = NSLocalizedString("accounts.errorRetry", comment: "")
+    }
+
+    struct NewPayment {
+        static var title = NSLocalizedString("newPayment.title", comment: "")
+        static var toAccount = NSLocalizedString("newPayment.toAccount", comment: "")
+        static var bankCode = NSLocalizedString("newPayment.bankCode", comment: "")
+        static var amount = NSLocalizedString("newPayment.amount", comment: "")
+        static var pay = NSLocalizedString("newPayment.pay", comment: "")
+    }
+
+    struct TransactionHistory {
+        static var title = NSLocalizedString("transactionHistory.title", comment: "")
+    }
     
 }

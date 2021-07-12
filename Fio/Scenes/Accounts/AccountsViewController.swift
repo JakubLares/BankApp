@@ -25,7 +25,7 @@ class AccountsViewController: UIViewController {
     }
 
     private func setupUI() {
-        title = LocalizableStrings.accounts
+        title = LocalizableStrings.Accounts.title
         navigationController?.navigationBar.prefersLargeTitles = true
 
         let paymentButton = UIBarButtonItem(image: Images.newPayment, style: .done, target: self, action: #selector((paymentButtonPressed)))

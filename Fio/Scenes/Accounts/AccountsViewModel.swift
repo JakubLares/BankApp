@@ -44,8 +44,8 @@ class AccountsViewModel {
     }
 
     private func showDownloadError() {
-        let alert = UIAlertController(title: nil, message: LocalizableStrings.downloadFailed, preferredStyle: .alert)
-        let retryAction = UIAlertAction(title: LocalizableStrings.retry, style: .default) { [weak self] _ in
+        let alert = UIAlertController(title: nil, message: LocalizableStrings.Accounts.errorMessage, preferredStyle: .alert)
+        let retryAction = UIAlertAction(title: LocalizableStrings.Accounts.errorRetry, style: .default) { [weak self] _ in
             self?.loadAccounts()
         }
         alert.addAction(retryAction)

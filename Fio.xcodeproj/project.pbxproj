@@ -104,9 +104,7 @@
 				6C03B925269B4B9D00BB3C15 /* APIClient */,
 				6C03B936269BAA4400BB3C15 /* FileClient */,
 				6C03B910269B28AE00BB3C15 /* Resources */,
-				6C03B906269B1B8400BB3C15 /* Accounts */,
-				6C03B92A269B53D900BB3C15 /* NewPayment */,
-				6C03B93C269BB36F00BB3C15 /* TransactionHistory */,
+				6C7FBAAC269C177E0026D053 /* Scenes */,
 				6C03B8EF269B1A3F00BB3C15 /* AppDelegate.swift */,
 				6C03B8F1269B1A3F00BB3C15 /* SceneDelegate.swift */,
 				6C03B8FA269B1A4000BB3C15 /* LaunchScreen.storyboard */,
@@ -219,6 +217,16 @@
 				6C03B946269BB76D00BB3C15 /* TransactionHistoryTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6C7FBAAC269C177E0026D053 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6C03B906269B1B8400BB3C15 /* Accounts */,
+				6C03B92A269B53D900BB3C15 /* NewPayment */,
+				6C03B93C269BB36F00BB3C15 /* TransactionHistory */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

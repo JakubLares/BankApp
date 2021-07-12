@@ -40,14 +40,14 @@ class NewPaymentViewController: UIViewController {
     }
 
     private func setupUI() {
-        title = LocalizableStrings.newPayment
+        title = LocalizableStrings.NewPayment.title
 
-        toAccountLabel.text = LocalizableStrings.toAccount
-        bankCodeLabel.text = LocalizableStrings.bankCode
-        amountLabel.text = LocalizableStrings.amount
+        toAccountLabel.text = LocalizableStrings.NewPayment.toAccount
+        bankCodeLabel.text = LocalizableStrings.NewPayment.bankCode
+        amountLabel.text = LocalizableStrings.NewPayment.amount
         currencyLabel.text = LocalizableStrings.czechCrown
         payButton.isEnabled = false
-        payButton.setTitle(LocalizableStrings.pay, for: .normal)
+        payButton.setTitle(LocalizableStrings.NewPayment.pay, for: .normal)
     }
 
     private func setupViewModel() {

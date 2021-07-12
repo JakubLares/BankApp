@@ -41,6 +41,8 @@
                     </stackView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wNV-xj-Ojo" secondAttribute="bottom" constant="13" id="Bc0-ve-6t5"/>
+                    <constraint firstItem="wNV-xj-Ojo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Cer-5Y-Qjr"/>
                     <constraint firstItem="BkE-gZ-o0k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Stg-3U-MlO"/>
                     <constraint firstAttribute="trailing" secondItem="wNV-xj-Ojo" secondAttribute="trailing" constant="16" id="d5c-wB-fce"/>
                     <constraint firstItem="BkE-gZ-o0k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hXf-8M-KUw"/>

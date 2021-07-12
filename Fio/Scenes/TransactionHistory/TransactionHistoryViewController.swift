@@ -24,7 +24,7 @@ class TransactionHistoryViewController: UIViewController {
     }
 
     private func setupUI() {
-        title = LocalizableStrings.transactionHistory
+        title = LocalizableStrings.TransactionHistory.title
     }
 
     private func setupTableView() {
